@@ -1,14 +1,23 @@
 # admitr
 
-Automating your job.
+## Automating your job.
 
-## Getting Started
-### On the server
-Install the module with: `npm install admitr`
+### Background
 
-```javascript
-var admitr = require('admitr');
-admitr.awesome(); // "awesome"
+One of the tasks of resident physicians in hospitals is _admitting patients_, which is a task of _allocating_ an incoming patient to the appropriate _team_ of other doctors and nurses for the patient's care whilst in the hospital. 
+
+The allocation is made based on attributes of both the patient (particular needs, type of illness, etc.) and of the teams (specializations, current number of available beds, etc.). Given a configuration of _teams_ and an incoming _patient_, the admitting resident chooses the best team to handle that patient's stay in the hospital.
+
+At the time of each admission event for a particular patient each team may be _eligible_ or _ineligible_ and the list of eligible teams is ordered based on further attributes of the team.
+
+When a team handles an admission, it is moved to the end of the order so that given a stream of identical patients it would be the last to handle another one.
+
+### Getting Started
+
+I need to clean up the build and test situation, but I wanted to get this rendering in the browser quickly for prototyping.
+
+```
+browserify lib/main.js > bundle.js && python -m SimpleHTTPServer
 ```
 
 ### In the browser

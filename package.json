@@ -2,7 +2,7 @@
   "name": "admitr",
   "description": "Automating your job.",
   "version": "0.1.0",
-  "homepage": "http://github.io/malecki/admitr",
+  "homepage": "https://github.io/malecki/admitr",
   "author": {
     "name": "malecki",
     "email": "malecki@gmail.com"
@@ -17,7 +17,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.io/malecki/admitr/blob/master/LICENSE-MIT"
+      "url": "https://github.io/malecki/admitr/blob/master/LICENSE-MIT"
     }
   ],
   "main": "lib/admitr",
@@ -25,15 +25,32 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "test": "grunt nodeunit"
+    "test": "make test"
   },
-  "devDependencies": {
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.4.0",
-    "grunt": "~0.4.4"
-  },
+  "dependencies": {
+    "angular": "~1.2.16",
+    "jquery": "~2.1.1",
+    "chroma-js": "~0.5.6",
+    "curry": "~1.2",
+    "d3": "~3.4.1",
+    "machina": "~0.3.5",
+    "machina.postal": "~0.3.0",
+    "moment": "~2.5.1",
+    "postal": "~0.8.11",
+    "postal.diagnostics": "~0.7.0",
+    "lodash": "~2.4.1"
+    },
+    "devDependencies":{
+        "xunit-file": "~0.0.5",
+        "selenium-standalone": "2.39.0-2.9.0",
+        "stylus": "~0.42.2",
+        "testem": "~0.6.7",
+        "nib": "~1.0.2",
+        "webdriverjs": "*",
+        "chai": ">=1.9",
+        "chai-things": "~0.2.0",
+        "mocha": "~1.17.1",
+        "browserify": "3.24.8"
+    },
   "keywords": []
 }
