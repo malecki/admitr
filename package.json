@@ -43,7 +43,7 @@
     "devDependencies":{
         "xunit-file": "~0.0.5",
         "selenium-standalone": "2.39.0-2.9.0",
-        "stylus": "~0.42.2",
+        "stylus": "~0.45.1",
         "testem": "~0.6.7",
         "nib": "~1.0.2",
         "webdriverjs": "*",

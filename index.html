@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styl/admitr.css">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
         <script src="components/angular-strap/dist/angular-strap.min.js"></script> <script src="components/angular-strap/dist/angular-strap.tpl.min.js"></script>
 
@@ -13,22 +14,12 @@
 </head>
 <body ng-app="admitrApp" ng-controller="admitr as ctrl">
     <section class="configuration">
-        <article>
-            <team-list />
-        </article>
-        <article>
-            <night-residents />
-        </article>
+        <team-list></team-list>
+        <night-residents></night-residents>
     </section>
     <section class="run">
-        <article>
-            <patient-detail />
-        </article>
-        <aside>
-            <eligible-teams />
-        </aside>
-        <aside>
-            <history />
-        </aside>
+        <patient-detail></patient-detail>
+        <eligible-teams></eligible-teams>
+        <history></history>
     </section>
 </body>
