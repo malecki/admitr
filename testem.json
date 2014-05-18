@@ -1,0 +1,19 @@
+{
+  "framework": "mocha+chai",
+  "src_files": [
+    "test/*spec.js"
+    ,"lib/*.js"
+  ]
+  ,"launch_in_dev": ["chrome"]
+  ,"serve_files": [
+"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+,"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"
+,"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-mocks.js"
+,"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.min.js"
+,"components/angular-strap/dist/angular-strap.min.js" ,"components/angular-strap/dist/angular-strap.tpl.min.js"
+
+,"bundle.js"
+,"test/test.js"
+  ]
+  ,"before_tests": "browserify lib/index.js > bundle.js && browserify test/*_spec.js > test/test.js"
+}

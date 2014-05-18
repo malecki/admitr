@@ -8,8 +8,27 @@
         <script src="components/angular-strap/dist/angular-strap.min.js"></script> <script src="components/angular-strap/dist/angular-strap.tpl.min.js"></script>
 
     <script src="bundle.js"></script>
+    <script>
+    </script>
 </head>
 <body ng-app="admitrApp">
-<team-list />
-
-</body>	
+    <section class="configuration">
+        <article>
+            <teams-editor />
+        </article>
+        <article>
+            <night-residents />
+        </article>
+    </section>
+    <section class="run">
+        <article>
+            <patient-detail />
+        </article>
+        <aside>
+            <eligible-teams />
+        </aside>
+        <aside>
+            <history />
+        </aside>
+    </section>
+</body>
